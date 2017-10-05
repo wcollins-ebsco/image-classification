@@ -25,6 +25,9 @@ RUN pip install dumb-init
 
 RUN pip install awscli
 
+#install Flask
+RUN pip install uwsgi Flask
+
 ENV WORKSHOPDIR /root/ecs-deep-learning-workshop
 
 RUN mkdir ${WORKSHOPDIR}
